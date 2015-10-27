@@ -1,14 +1,14 @@
 number = (1..100)
-number.each do |number|
+number.each do |n|
 
-if number %3 == 0	&& number %5 == 0
-	puts "BitMaker"
+  if (n%3).zero?	&& (n%5).zero?
+  	puts "BitMaker"
+  elsif (n%3).zero?
+  	puts "Bit "
+  elsif (n%5).zero?
+  	puts "Maker "
+  else
+  	puts n
+  end
+end
 
-elsif number %3 == 0
-	puts "Bit "
-elsif number %5 == 0
-	puts "Maker "
-else
-	puts number
-end
-end
